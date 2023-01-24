@@ -3,7 +3,7 @@
 
 #define boton_A 39                              // Pin VN Esp32 para botón A
 #define boton_B 34                              // Pin GPIO34 Esp32 para botón A
-#define boton_C 35                              // Pin GPIO35 Esp32 para botón A
+#define boton_C 35                              // Pin GPIO35 Esp32 para botón A ()
 
 //Banderas para pulsadores
     byte _btnA      = 0;
