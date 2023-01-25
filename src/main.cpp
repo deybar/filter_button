@@ -14,6 +14,9 @@ byte _btnC      = 0;
 
 void setup() {
   
+  //Iniciar puerto Serial 
+  Serial.begin(115200);
+
   //Configure como entrada
   pinMode (boton_A,INPUT);
   pinMode (boton_B,INPUT);
