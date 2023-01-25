@@ -31,9 +31,29 @@ void loop() {
   {
     delay(20);
     if(digitalRead(boton_A)==1) 
-    {
-      Serial.println("Boton A");       
+    {        
+      Serial.println("Boton A"); 
       _btnA=0;                      // Reset flat boton A                        
+    }            
+  }
+
+  if(_btnB==1) 
+  {
+    delay(20);
+    if(digitalRead(boton_B)==1) 
+    {
+      Serial.println("Boton B");       
+      _btnB=0;                      // Reset flat boton A                        
+    }            
+  }
+
+  if(_btnC==1) 
+  {
+    delay(20);
+    if(digitalRead(boton_C)==1) 
+    {
+      Serial.println("Boton C");       
+      _btnC=0;                      // Reset flat boton A                        
     }            
   }
 }
@@ -51,13 +71,11 @@ void new_boton()
     if(digitalRead(boton_B)==0 && _btnA==0 && _btnB==0 && _btnC==0) 
     { 
         _btnB=1; 
-        Serial.println("Boton B");
     }
 
     //Leer Boton C
     if(digitalRead(boton_C)==0 && _btnA==0 && _btnB==0 && _btnC==0) 
     { 
         _btnC=1; 
-        Serial.println("Boton C");
     }
 }
