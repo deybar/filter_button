@@ -18,7 +18,6 @@ void setup() {
   pinMode (boton_A,INPUT);
   pinMode (boton_B,INPUT);
   pinMode (boton_C,INPUT);
-  
 }
 
 void loop() {
